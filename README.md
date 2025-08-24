@@ -1,37 +1,44 @@
 # 세인트 존스 독서 코치 📚
 
+[![Deploy to GitHub Pages](https://github.com/USERNAME/REPOSITORY/actions/workflows/deploy.yml/badge.svg)](https://github.com/USERNAME/REPOSITORY/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 세인트 존스 칼리지의 위대한 고전 도서 목록을 기반으로 한 개인 맞춤형 독서 코치 웹앱입니다.
+
+## 🎯 라이브 데모
+
+- **GitHub Pages**: `https://USERNAME.github.io/REPOSITORY`
+- **개발 서버**: `http://localhost:3000`
 
 ## 🌟 주요 기능
 
-- 📚 체계적인 도서 검색 및 필터링
-- 📊 개인 읽기 진행 상황 추적
-- 🎯 맞춤형 독서 경로 제공
-- 💡 전문가 읽기 가이드
-- 🔖 북마크 및 메모 기능
-- 📱 완전한 반응형 디자인
+- 📚 **체계적인 도서 관리**: 검색, 필터링, 정렬 기능
+- 📊 **개인 진도 추적**: 읽기 상태 및 진행률 관리
+- 🎯 **맞춤형 독서 경로**: 단계별 독서 계획 제공
+- 💡 **전문가 가이드**: 각 책에 대한 읽기 팁과 배경 지식
+- 🔖 **북마크 시스템**: 관심 도서 저장 및 관리
+- 📱 **반응형 디자인**: 모든 기기에서 완벽한 사용자 경험
+- 🎨 **아름다운 UI**: 모던하고 직관적인 인터페이스
 
-## 🚀 배포 방법
+## 🚀 빠른 시작
 
-### 1. Netlify Drop 사용
-1. [Netlify Drop](https://app.netlify.com/drop) 방문
-2. 프로젝트 폴더 전체를 드래그 앤 드롭
-3. 자동 배포 완료!
-
-### 2. GitHub Pages 사용
-1. GitHub 저장소 생성
-2. 모든 파일 업로드
-3. Settings > Pages에서 배포 설정
-
-### 3. 로컬 실행
+### 1. GitHub에서 포크하기
 ```bash
-# Python 서버 사용
-python3 -m http.server 8000
+# 저장소 클론
+git clone https://github.com/USERNAME/saint-johns-reading-coach.git
+cd saint-johns-reading-coach
 
-# 또는 Node.js 서버 사용
+# 의존성 설치
 npm install
+
+# 개발 서버 시작
 npm start
 ```
+
+### 2. 즉시 배포하기
+- **GitHub Pages**: 저장소 Settings → Pages → Deploy from branch 선택
+- **Netlify**: [netlify.com](https://netlify.com)에서 GitHub 연동
+- **Vercel**: [vercel.com](https://vercel.com)에서 GitHub 연동
 
 ## 📁 파일 구조
 
