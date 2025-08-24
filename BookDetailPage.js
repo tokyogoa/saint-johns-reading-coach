@@ -4,18 +4,10 @@ const BookDetailPage = ({ bookId, onBack }) => {
     const [relatedBooks, setRelatedBooks] = React.useState([]);
     const [readingProgress, setReadingProgress] = React.useState({ status: 'not-started', progress: 0 });
     const [isBookmarked, setIsBookmarked] = React.useState(false);
-    const [loading, setLoading] = React.useState(true);
 
     React.useEffect(() => {
-        loadBookData();
-    }, [bookId]);
-
-    const loadBookData = () => {
-        if (!window.booksData) {
-            setTimeout(loadBookData, 100);
-            return;
-        }
-
+        // index.js에서 데이터 로딩을 보장하므로, 컴포넌트가 렌더링될 때 데이터는 이미 준비되어 있습니다.
+        // bookId가 변경될 때마다 해당 도서 정보를 다시 불러옵니다.
         const bookData = window.booksData.getBookById(parseInt(bookId));
         if (bookData) {
             setBook(bookData);
@@ -23,8 +15,7 @@ const BookDetailPage = ({ bookId, onBack }) => {
             setReadingProgress(window.booksData.getReadingProgress(parseInt(bookId)));
             setIsBookmarked(window.booksData.isBookmarked(parseInt(bookId)));
         }
-        setLoading(false);
-    };
+    }, [bookId]);
 
     const handleBookmark = () => {
         if (window.booksData && book) {
@@ -92,17 +83,6 @@ const BookDetailPage = ({ bookId, onBack }) => {
         };
         return colors[status] || colors['not-started'];
     };
-
-    if (loading) {
-        return (
-            <div className="container">
-                <div className="loading">
-                    <i className="fas fa-spinner"></i>
-                    <p>도서 정보를 불러오는 중...</p>
-                </div>
-            </div>
-        );
-    }
 
     if (!book) {
         return (

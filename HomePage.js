@@ -1,28 +1,13 @@
 // 홈페이지 컴포넌트
 const HomePage = ({ onNavigate }) => {
-    const [stats, setStats] = React.useState(null);
-    const [readingPaths, setReadingPaths] = React.useState([]);
-    const [recommendedBooks, setRecommendedBooks] = React.useState([]);
-    const [recentBooks, setRecentBooks] = React.useState([]);
-
-    React.useEffect(() => {
-        loadHomeData();
-    }, []);
-
-    const loadHomeData = () => {
-        if (!window.booksData) {
-            setTimeout(loadHomeData, 100);
-            return;
-        }
-
-        setStats(window.booksData.getStats());
-        setReadingPaths(window.booksData.getReadingPaths());
-        setRecommendedBooks(window.booksData.getReadingRecommendations('beginner'));
-        
-        // 최근 추가된 책들 (예시로 처음 3권)
+    // index.js에서 데이터 로딩을 보장하므로, 컴포넌트가 렌더링될 때 데이터는 이미 준비되어 있습니다.
+    const stats = React.useMemo(() => window.booksData.getStats(), []);
+    const readingPaths = React.useMemo(() => window.booksData.getReadingPaths(), []);
+    const recommendedBooks = React.useMemo(() => window.booksData.getReadingRecommendations('beginner'), []);
+    const recentBooks = React.useMemo(() => {
         const allBooks = window.booksData.getAllBooks();
-        setRecentBooks(allBooks.slice(0, 3));
-    };
+        return allBooks.slice(0, 3);
+    }, []);
 
     const handlePathClick = (pathId) => {
         // 독서 경로 상세 페이지로 이동하거나 해당 책들을 필터링

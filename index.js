@@ -4,10 +4,43 @@ const { createRoot } = ReactDOM;
 // DOM이 로드된 후 앱 시작
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('root');
-    const root = createRoot(container);
-    
-    // 앱 렌더링
-    root.render(React.createElement(App));
+    if (!container) {
+        console.error('Root 컨테이너를 찾을 수 없습니다!');
+        return;
+    }
+
+    try {
+        // Babel Standalone이 비동기적으로 스크립트를 처리하므로,
+        // books.js에서 window.booksData가 설정될 때까지 기다린 후 앱을 렌더링합니다.
+        const startApp = () => {
+            // window.booksData 객체가 생성되고, 비동기 데이터 로딩이 완료되었는지 확인합니다.
+            if (window.booksData && window.booksData.books.length > 0) {
+                console.log('Books 데이터 초기화 완료, React 앱을 렌더링합니다.');
+                const root = createRoot(container);
+                root.render(React.createElement(App));
+            } else {
+                // books.js가 아직 로드되지 않았거나 데이터 로딩이 진행 중이면, 잠시 후 다시 시도합니다.
+                console.log('Books 데이터 대기 중...');
+                setTimeout(startApp, 100);
+            }
+        };
+
+        console.log('앱 초기화를 시작합니다...');
+        startApp();
+    } catch (error) {
+        console.error('앱 렌더링 중 오류 발생:', error);
+        // 오류 시 기본 메시지 표시
+        container.innerHTML = `
+            <div style="padding: 2rem; text-align: center; font-family: Arial, sans-serif;">
+                <h1>세인트 존스 독서 코치</h1>
+                <p>앱을 로드하는 중 문제가 발생했습니다.</p>
+                <p>브라우저를 새로고침해 주세요.</p>
+                <button onclick="location.reload()" style="padding: 1rem 2rem; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    새로고침
+                </button>
+            </div>
+        `;
+    }
     
     // 서비스 워커 등록 (나중에 오프라인 기능을 위해)
     if ('serviceWorker' in navigator) {

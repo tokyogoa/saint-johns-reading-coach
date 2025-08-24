@@ -1,13 +1,13 @@
 # 세인트 존스 독서 코치 📚
 
-[![Deploy to GitHub Pages](https://github.com/USERNAME/REPOSITORY/actions/workflows/deploy.yml/badge.svg)](https://github.com/USERNAME/REPOSITORY/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/tokyogoa/saint-johns-reading-coach/actions/workflows/deploy.yml/badge.svg)](https://github.com/tokyogoa/saint-johns-reading-coach/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 세인트 존스 칼리지의 위대한 고전 도서 목록을 기반으로 한 개인 맞춤형 독서 코치 웹앱입니다.
 
 ## 🎯 라이브 데모
 
-- **GitHub Pages**: `https://USERNAME.github.io/REPOSITORY`
+- **GitHub Pages**: `https://tokyogoa.github.io/saint-johns-reading-coach`
 - **개발 서버**: `http://localhost:3000`
 
 ## 🌟 주요 기능
@@ -25,7 +25,7 @@
 ### 1. GitHub에서 포크하기
 ```bash
 # 저장소 클론
-git clone https://github.com/USERNAME/saint-johns-reading-coach.git
+git clone https://github.com/tokyogoa/saint-johns-reading-coach.git
 cd saint-johns-reading-coach
 
 # 의존성 설치

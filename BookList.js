@@ -1,10 +1,11 @@
 // 도서 목록 컴포넌트
 const BookList = ({ onBookClick }) => {
-    const [books, setBooks] = React.useState([]);
-    const [filteredBooks, setFilteredBooks] = React.useState([]);
-    const [categories, setCategories] = React.useState([]);
-    const [years, setYears] = React.useState([]);
-    const [loading, setLoading] = React.useState(true);
+    // index.js에서 데이터 로딩을 보장하므로, 컴포넌트가 렌더링될 때 데이터는 이미 준비되어 있습니다.
+    const allBooks = React.useMemo(() => window.booksData.getAllBooks(), []);
+    const categories = React.useMemo(() => window.booksData.getCategories(), []);
+    const years = React.useMemo(() => window.booksData.getYears(), []);
+
+    const [filteredBooks, setFilteredBooks] = React.useState(allBooks);
     const [filters, setFilters] = React.useState({
         search: '',
         category: 'all',
@@ -15,35 +16,10 @@ const BookList = ({ onBookClick }) => {
     const [sortOrder, setSortOrder] = React.useState('asc');
 
     React.useEffect(() => {
-        loadData();
-    }, []);
-
-    React.useEffect(() => {
-        if (window.booksData) {
-            const filtered = window.booksData.filterBooks(filters);
-            const sorted = sortBooks(filtered, sortBy, sortOrder);
-            setFilteredBooks(sorted);
-        }
-    }, [books, filters, sortBy, sortOrder]);
-
-    const loadData = async () => {
-        setLoading(true);
-        
-        // booksData가 로드될 때까지 기다림
-        const checkDataLoaded = () => {
-            if (window.booksData && window.booksData.books.length > 0) {
-                setBooks(window.booksData.getAllBooks());
-                setCategories(window.booksData.getCategories());
-                setYears(window.booksData.getYears());
-                setFilteredBooks(window.booksData.getAllBooks());
-                setLoading(false);
-            } else {
-                setTimeout(checkDataLoaded, 100);
-            }
-        };
-        
-        checkDataLoaded();
-    };
+        const filtered = window.booksData.filterBooks(filters);
+        const sorted = sortBooks(filtered, sortBy, sortOrder);
+        setFilteredBooks(sorted);
+    }, [filters, sortBy, sortOrder]);
 
     const sortBooks = (booksList, sortBy, order) => {
         return [...booksList].sort((a, b) => {
@@ -115,17 +91,6 @@ const BookList = ({ onBookClick }) => {
         
         return activeFilters.length > 0 ? activeFilters.join(', ') : '모든 책';
     };
-
-    if (loading) {
-        return (
-            <div className="container">
-                <div className="loading">
-                    <i className="fas fa-spinner"></i>
-                    <p>도서 목록을 불러오는 중...</p>
-                </div>
-            </div>
-        );
-    }
 
     return (
         <div className="container">

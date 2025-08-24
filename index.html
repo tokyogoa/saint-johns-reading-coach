@@ -4,24 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>세인트 존스 독서 코치 - Great Books Reading Guide</title>
-    <link rel="stylesheet" href="App.css">
-    <link rel="stylesheet" href="BookDetailPage.css">
+    <link rel="stylesheet" href="./App.css">
+    <link rel="stylesheet" href="./ReadingPathsPage.css">
+    <link rel="stylesheet" href="./BookDetailPage.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="root"></div>
-    
+    <div id="root">
+        <!-- 로딩 중 표시 -->
+        <div style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Montserrat', sans-serif;
+            flex-direction: column;
+            text-align: center;
+        ">
+            <div style="
+                background: white;
+                padding: 3rem;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                max-width: 500px;
+                margin: 2rem;
+            ">
+                <h1 style="
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    font-size: 2.5rem;
+                ">📚 세인트 존스 독서 코치</h1>
+                <p style="
+                    color: #7f8c8d;
+                    margin-bottom: 2rem;
+                    font-size: 1.1rem;
+                ">Great Books Reading Guide</p>
+                <div style="
+                    width: 50px;
+                    height: 50px;
+                    border: 4px solid #f3f3f3;
+                    border-top: 4px solid #3498db;
+                    border-radius: 50%;
+                    animation: spin 1s linear infinite;
+                    margin: 0 auto;
+                "></div>
+                <p style="
+                    color: #95a5a6;
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                ">앱을 로드하는 중...</p>
+            </div>
+        </div>
+        <style>
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+    </div>
+
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
-    <script type="text/babel" src="books.js"></script>
-    <script type="text/babel" src="Book.js"></script>
-    <script type="text/babel" src="BookList.js"></script>
-    <script type="text/babel" src="BookDetailPage.js"></script>
-    <script type="text/babel" src="HomePage.js"></script>
-    <script type="text/babel" src="App.js"></script>
-    <script type="text/babel" src="index.js"></script>
+
+    <script type="text/babel" src="./books.js"></script>
+    <script type="text/babel" src="./Book.js"></script>
+    <script type="text/babel" src="./BookList.js"></script>
+    <script type="text/babel" src="./BookDetailPage.js"></script>
+    <script type="text/babel" src="./HomePage.js"></script>
+    <script type="text/babel" src="./App.js"></script>
+    <script type="text/babel" src="./index.js"></script>
 </body>
 </html>
