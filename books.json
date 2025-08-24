@@ -1,0 +1,222 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Iliad",
+      "author": "Homer",
+      "year": "Freshman",
+      "category": "Literature",
+      "subject": "Poetry & Epic",
+      "description": "고대 그리스의 영웅서사시로, 트로이 전쟁을 배경으로 아킬레스의 분노와 영웅적 삶을 그린 작품입니다.",
+      "educationalValue": "서양 문학의 출발점이자 영웅주의, 명예, 운명에 대한 근본적 질문을 제기하는 작품입니다.",
+      "readingTips": "고대 그리스 신화에 대한 기본 지식을 갖춘 후 읽으면 더욱 깊이 이해할 수 있습니다.",
+      "difficulty": "중급",
+      "estimatedReadingTime": "2-3주",
+      "tags": ["epic", "mythology", "heroism", "ancient-greece"]
+    },
+    {
+      "id": 2,
+      "title": "The Odyssey",
+      "author": "Homer",
+      "year": "Freshman",
+      "category": "Literature",
+      "subject": "Poetry & Epic",
+      "description": "오디세우스의 10년간의 모험담을 통해 인간의 지혜와 끈기, 그리움을 그린 고전입니다.",
+      "educationalValue": "모험과 성장, 가족에 대한 사랑, 지혜의 중요성을 배울 수 있는 작품입니다.",
+      "readingTips": "일리아드를 먼저 읽고 나서 읽으면 등장인물들의 배경을 더 잘 이해할 수 있습니다.",
+      "difficulty": "중급",
+      "estimatedReadingTime": "2-3주",
+      "tags": ["adventure", "wisdom", "homecoming", "ancient-greece"]
+    },
+    {
+      "id": 3,
+      "title": "Oresteia",
+      "author": "Aeschylus",
+      "year": "Freshman",
+      "category": "Literature",
+      "subject": "Drama",
+      "description": "복수의 연쇄를 끊고 정의를 확립하는 과정을 그린 그리스 비극 3부작입니다.",
+      "educationalValue": "정의, 복수, 법치주의의 발전에 대한 깊은 통찰을 제공합니다.",
+      "readingTips": "그리스 법정 시스템과 민주주의 발전사를 함께 공부하면 도움이 됩니다.",
+      "difficulty": "고급",
+      "estimatedReadingTime": "1-2주",
+      "tags": ["tragedy", "justice", "law", "ancient-greece"]
+    },
+    {
+      "id": 4,
+      "title": "Sophocles Plays",
+      "author": "Sophocles",
+      "year": "Freshman",
+      "category": "Literature",
+      "subject": "Drama",
+      "description": "오이디푸스 왕을 비롯한 소포클레스의 대표작들로, 운명과 인간의 의지를 탐구합니다.",
+      "educationalValue": "비극적 영웅과 운명, 자유의지에 대한 철학적 성찰을 제공합니다.",
+      "readingTips": "그리스 비극의 형식과 코러스의 역할을 이해하고 읽으면 좋습니다.",
+      "difficulty": "중상급",
+      "estimatedReadingTime": "2주",
+      "tags": ["tragedy", "fate", "free-will", "ancient-greece"]
+    },
+    {
+      "id": 5,
+      "title": "The Republic",
+      "author": "Plato",
+      "year": "Freshman",
+      "category": "Philosophy",
+      "subject": "Political Philosophy",
+      "description": "이상국가론을 통해 정의, 교육, 철학에 대한 플라톤의 사상을 체계적으로 제시한 작품입니다.",
+      "educationalValue": "서양 철학의 기초가 되는 이데아론과 정치철학의 출발점을 학습할 수 있습니다.",
+      "readingTips": "대화체로 쓰여진 작품이므로 소크라테스의 문답법을 이해하며 읽어보세요.",
+      "difficulty": "고급",
+      "estimatedReadingTime": "3-4주",
+      "tags": ["philosophy", "politics", "education", "justice"]
+    },
+    {
+      "id": 6,
+      "title": "Nicomachean Ethics",
+      "author": "Aristotle",
+      "year": "Sophomore",
+      "category": "Philosophy",
+      "subject": "Ethics",
+      "description": "덕윤리학의 체계를 확립한 아리스토텔레스의 대표적 윤리학 저작입니다.",
+      "educationalValue": "서양 윤리학의 기초와 덕성, 행복에 대한 체계적 사고를 기를 수 있습니다.",
+      "readingTips": "플라톤의 철학을 먼저 이해한 후, 아리스토텔레스만의 독창적 사상을 파악해보세요.",
+      "difficulty": "고급",
+      "estimatedReadingTime": "3-4주",
+      "tags": ["ethics", "virtue", "happiness", "philosophy"]
+    },
+    {
+      "id": 7,
+      "title": "Euclid's Elements",
+      "author": "Euclid",
+      "year": "Freshman",
+      "category": "Mathematics",
+      "subject": "Geometry",
+      "description": "기하학의 체계적 기초를 마련한 유클리드의 불멸의 수학서입니다.",
+      "educationalValue": "논리적 사고와 증명의 방법론, 수학적 사고의 기초를 배울 수 있습니다.",
+      "readingTips": "각 정리를 차근차근 따라가며 증명 과정을 이해하는 것이 중요합니다.",
+      "difficulty": "중상급",
+      "estimatedReadingTime": "4-6주",
+      "tags": ["mathematics", "geometry", "logic", "proof"]
+    },
+    {
+      "id": 8,
+      "title": "Confessions",
+      "author": "Augustine",
+      "year": "Sophomore",
+      "category": "Philosophy",
+      "subject": "Theology & Philosophy",
+      "description": "아우구스티누스의 자전적 고백록으로, 기독교 철학의 기초를 마련한 작품입니다.",
+      "educationalValue": "신앙과 이성, 시간과 영원에 대한 깊은 성찰을 제공합니다.",
+      "readingTips": "고대 철학과 기독교 사상의 만남이라는 역사적 맥락을 이해하며 읽어보세요.",
+      "difficulty": "중상급",
+      "estimatedReadingTime": "2-3주",
+      "tags": ["theology", "philosophy", "autobiography", "faith"]
+    },
+    {
+      "id": 9,
+      "title": "The Divine Comedy",
+      "author": "Dante",
+      "year": "Sophomore",
+      "category": "Literature",
+      "subject": "Poetry",
+      "description": "지옥, 연옥, 천국을 여행하며 인간 구원의 여정을 그린 중세 최고의 서사시입니다.",
+      "educationalValue": "중세 세계관과 기독교 사상, 구원론에 대한 포괄적 이해를 제공합니다.",
+      "readingTips": "중세 신학과 고전 신화에 대한 기본 지식을 갖추고 읽으면 더욱 풍부하게 감상할 수 있습니다.",
+      "difficulty": "고급",
+      "estimatedReadingTime": "4-5주",
+      "tags": ["epic", "medieval", "theology", "allegory"]
+    },
+    {
+      "id": 10,
+      "title": "Hamlet",
+      "author": "Shakespeare",
+      "year": "Junior",
+      "category": "Literature",
+      "subject": "Drama",
+      "description": "복수와 광기, 실존적 고뇌를 그린 셰익스피어의 최고 걸작 중 하나입니다.",
+      "educationalValue": "인간 심리의 복잡성과 실존적 문제에 대한 깊은 통찰을 제공합니다.",
+      "readingTips": "르네상스 시대의 사회적 배경과 복수극의 전통을 이해하고 읽어보세요.",
+      "difficulty": "중상급",
+      "estimatedReadingTime": "2주",
+      "tags": ["drama", "psychology", "existentialism", "renaissance"]
+    },
+    {
+      "id": 11,
+      "title": "Don Quixote",
+      "author": "Cervantes",
+      "year": "Junior",
+      "category": "Literature",
+      "subject": "Novel",
+      "description": "이상과 현실의 괴리를 유머러스하게 그린 근대 소설의 출발점이 된 작품입니다.",
+      "educationalValue": "현실과 이상, 문학과 삶의 관계에 대한 메타적 성찰을 제공합니다.",
+      "readingTips": "기사도 문학의 패러디라는 점을 염두에 두고 읽으면 더욱 재미있게 읽을 수 있습니다.",
+      "difficulty": "중급",
+      "estimatedReadingTime": "4-5주",
+      "tags": ["novel", "satire", "idealism", "realism"]
+    },
+    {
+      "id": 12,
+      "title": "Critique of Pure Reason",
+      "author": "Kant",
+      "year": "Senior",
+      "category": "Philosophy",
+      "subject": "Epistemology",
+      "description": "인간 이성의 한계와 가능성을 탐구한 근대 철학의 기념비적 작품입니다.",
+      "educationalValue": "인식론의 혁명과 근대 철학의 전환점을 이해할 수 있습니다.",
+      "readingTips": "매우 어려운 작품이므로 철학사 배경 지식을 충분히 갖추고 차근차근 읽어야 합니다.",
+      "difficulty": "최고급",
+      "estimatedReadingTime": "6-8주",
+      "tags": ["philosophy", "epistemology", "reason", "metaphysics"]
+    },
+    {
+      "id": 13,
+      "title": "Origin of Species",
+      "author": "Darwin",
+      "year": "Senior",
+      "category": "Science",
+      "subject": "Biology",
+      "description": "진화론을 체계적으로 제시하여 생물학 혁명을 일으킨 과학사의 기념비적 저작입니다.",
+      "educationalValue": "과학적 사고방법과 진화론의 이해, 생명에 대한 새로운 관점을 제공합니다.",
+      "readingTips": "19세기 과학 혁명의 맥락에서 이해하며, 다윈의 관찰과 추론 과정을 따라가보세요.",
+      "difficulty": "중상급",
+      "estimatedReadingTime": "3-4주",
+      "tags": ["science", "evolution", "biology", "natural-selection"]
+    }
+  ],
+  "categories": [
+    { "name": "Literature", "description": "문학 작품들", "color": "#e74c3c" },
+    { "name": "Philosophy", "description": "철학 저작들", "color": "#3498db" },
+    { "name": "Mathematics", "description": "수학 관련 저작", "color": "#2ecc71" },
+    { "name": "Science", "description": "과학 저작들", "color": "#f39c12" },
+    { "name": "History", "description": "역사 관련 저작", "color": "#9b59b6" }
+  ],
+  "years": [
+    { "name": "Freshman", "description": "1학년 과정", "order": 1 },
+    { "name": "Sophomore", "description": "2학년 과정", "order": 2 },
+    { "name": "Junior", "description": "3학년 과정", "order": 3 },
+    { "name": "Senior", "description": "4학년 과정", "order": 4 }
+  ],
+  "readingPaths": [
+    {
+      "id": "classical",
+      "name": "고전 기초 코스",
+      "description": "서양 고전의 기초를 다지는 코스",
+      "books": [1, 2, 5, 7],
+      "duration": "3개월"
+    },
+    {
+      "id": "philosophy",
+      "name": "철학 탐구 코스",
+      "description": "철학적 사고력을 기르는 코스",
+      "books": [5, 6, 8, 12],
+      "duration": "4개월"
+    },
+    {
+      "id": "literature",
+      "name": "문학 감상 코스",
+      "description": "문학적 감수성을 기르는 코스",
+      "books": [1, 2, 9, 10, 11],
+      "duration": "4개월"
+    }
+  ]
+}
