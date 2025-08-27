@@ -1,26 +1,45 @@
 {
   "name": "saint-johns-reading-coach",
   "version": "1.0.0",
-  "description": "A reading coach web app based on St. John's College Great Books curriculum",
-  "main": "server.js",
+  "description": "세인트 존스 칼리지 위대한 고전 도서 읽기 코치 웹앱",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
   },
-  "keywords": [
-    "great-books",
-    "reading-coach",
-    "saint-johns",
-    "classics",
-    "literature"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "lucide-react": "^0.294.0",
+    "next": "^14.2.32",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.7"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
-  }
+    "@types/node": "^20.19.11",
+    "@types/react": "^18.3.24",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.32",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokyogoa/saint-johns-reading-coach.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tokyogoa/saint-johns-reading-coach/issues"
+  },
+  "homepage": "https://github.com/tokyogoa/saint-johns-reading-coach#readme"
 }
